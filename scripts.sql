@@ -9,6 +9,10 @@ CREATE TABLE IF NOT EXISTS `slac`.`usuario` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 
+INSERT INTO usuario VALUES(default, 'luiz', '12345', 1)
+
+/******************************************************************************************************/
+
 /*DROP AND CREATE TABELA CHAMADOS*/
 DROP TABLE IF EXISTS `slac`.`chamados`;
 CREATE TABLE `slac`.`chamados` (
@@ -28,3 +32,6 @@ CREATE TABLE `slac`.`chamados` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
+
+/*INSERT INTO TABELA CHAMADOS*/
+INSERT INTO chamados VALUES(default, 'troca', 'troca de lampada', 'corredor A2', 'MÉDIA', null,null, 1)
