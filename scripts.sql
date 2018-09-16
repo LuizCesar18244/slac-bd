@@ -23,6 +23,7 @@ CREATE TABLE `slac`.`chamados` (
   `prioridade` VARCHAR(30) NOT NULL,
   `data` DATETIME NULL,
   `fotos` LONGBLOB NULL,
+  `status` VARCHAR(30) NOT NULL,
   `usuario_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `id` (`usuario_id` ASC),
