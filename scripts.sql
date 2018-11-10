@@ -118,3 +118,12 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+/*INSERT TABELA MENU*/
+
+INSERT INTO menu VALUES (default, 'Novo Chamado', 'person-add', 'NovoChamadoPage', true);
+INSERT INTO menu VALUES (default, 'Seus chamados', 'person', 'LoginPage', true);
+INSERT INTO menu VALUES (default, 'Relatórios', 'trending-up', 'LoginPage', true);
+INSERT INTO menu VALUES (default, 'A equipe de manutenção', 'construct', 'LoginPage', true);
+INSERT INTO menu VALUES (default, 'Tutorial', 'bulb', 'LoginPage', true);
+INSERT INTO menu VALUES (default, 'Sobre', 'help-circle', 'LoginPage',  true);
+INSERT INTO menu VALUES (default, 'Logout', 'exit', 'LoginPage',  true);
