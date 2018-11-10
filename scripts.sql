@@ -120,10 +120,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 /*INSERT TABELA MENU*/
 
-INSERT INTO menu VALUES (default, 'Novo Chamado', 'person-add', 'NovoChamadoPage', true);
-INSERT INTO menu VALUES (default, 'Seus chamados', 'person', 'LoginPage', true);
-INSERT INTO menu VALUES (default, 'Relatórios', 'trending-up', 'LoginPage', true);
-INSERT INTO menu VALUES (default, 'A equipe de manutenção', 'construct', 'LoginPage', true);
-INSERT INTO menu VALUES (default, 'Tutorial', 'bulb', 'LoginPage', true);
-INSERT INTO menu VALUES (default, 'Sobre', 'help-circle', 'LoginPage',  true);
-INSERT INTO menu VALUES (default, 'Logout', 'exit', 'LoginPage',  true);
+INSERT INTO menu VALUES (1, 'Novo Chamado', 'person-add', 'NovoChamadoPage', true);
+INSERT INTO menu VALUES (2, 'Seus chamados', 'person', 'LoginPage', true);
+INSERT INTO menu VALUES (3, 'Relatórios', 'trending-up', 'LoginPage', true);
+INSERT INTO menu VALUES (4, 'A equipe de manutenção', 'construct', 'LoginPage', true);
+INSERT INTO menu VALUES (5, 'Tutorial', 'bulb', 'LoginPage', true);
+INSERT INTO menu VALUES (6, 'Sobre', 'help-circle', 'LoginPage',  true);
+INSERT INTO menu VALUES (7, 'Logout', 'exit', 'LoginPage',  true);
