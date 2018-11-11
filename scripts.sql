@@ -120,10 +120,14 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 /*INSERT TABELA MENU*/
 
-INSERT INTO menu VALUES (1, 'Novo Chamado', 'person-add', 'NovoChamadoPage', true);
-INSERT INTO menu VALUES (2, 'Seus chamados', 'person', 'LoginPage', true);
-INSERT INTO menu VALUES (3, 'Relatórios', 'trending-up', 'LoginPage', true);
-INSERT INTO menu VALUES (4, 'A equipe de manutenção', 'construct', 'LoginPage', true);
-INSERT INTO menu VALUES (5, 'Tutorial', 'bulb', 'LoginPage', true);
-INSERT INTO menu VALUES (6, 'Sobre', 'help-circle', 'LoginPage',  true);
-INSERT INTO menu VALUES (7, 'Logout', 'exit', 'LoginPage',  true);
+INSERT INTO menu VALUES (1, 'Cadastrar Usuário', 'person-add', 'NovoUsuarioPage', true);
+INSERT INTO menu VALUES (2, 'Consultar Usuário', 'person', 'ConsultaUsuarioPage', true);
+INSERT INTO menu VALUES (3, 'Relatórios', 'stats', 'LoginPage', true);
+INSERT INTO menu VALUES (4, 'Novo Chamado', 'person-add', 'NovoChamadoPage', false);
+INSERT INTO menu VALUES (5, 'Seus chamados', 'person', 'LoginPage', false);
+INSERT INTO menu VALUES (6, 'Mensagens', 'text', 'LoginPage', false);
+INSERT INTO menu VALUES (7, 'Avaliações', 'trending-up', 'LoginPage', false);
+INSERT INTO menu VALUES (8, 'Tutorial', 'bulb', 'LoginPage', false);
+INSERT INTO menu VALUES (9, 'A equipe de manutenção', 'construct', 'LoginPage', false);
+INSERT INTO menu VALUES (10, 'Sobre', 'help-circle', 'LoginPage', false);
+INSERT INTO menu VALUES (11, 'Logout', 'exit', 'LoginPage', false);
