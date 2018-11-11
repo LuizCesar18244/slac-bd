@@ -28,17 +28,18 @@ CREATE TABLE IF NOT EXISTS `slac`.`usuario` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `login` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(100) NULL DEFAULT NULL,
   `senha` VARCHAR(30) NOT NULL,
   `ativo` BIT(1) NOT NULL,
   `tipo` VARCHAR(45) NOT NULL,
   `administrador` BIT(1) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8;
 
 /*INSERT INTO TABELA USUARIO*/
-INSERT INTO usuario VALUES (default, 'Juca Alves', 'Juca', '1234', true, 'FUNCIONARIO', true );
+INSERT INTO usuario VALUES (default, 'Luiz Cesar Almeida da Silva', 'Luiz','luizcesar@gmail.com', '1234', true, 'FUNCIONARIO', true );
 
 -- -----------------------------------------------------
 -- Table `slac`.`chamados`
