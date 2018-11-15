@@ -114,11 +114,6 @@ CREATE TABLE IF NOT EXISTS `slac`.`menu` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
 /*INSERT TABELA MENU*/
 
 INSERT INTO menu VALUES (1, 'Cadastrar Usuário', 'person-add', 'NovoUsuarioPage', true);
@@ -132,3 +127,44 @@ INSERT INTO menu VALUES (8, 'Tutorial', 'bulb', 'LoginPage', false);
 INSERT INTO menu VALUES (9, 'A equipe de manutenção', 'construct', 'LoginPage', false);
 INSERT INTO menu VALUES (10, 'Sobre', 'help-circle', 'LoginPage', false);
 INSERT INTO menu VALUES (11, 'Logout', 'exit', 'LoginPage', false);
+
+
+-- -----------------------------------------------------
+-- Table `slac`.`mensagem`
+-- -----------------------------------------------------
+/*DROP AND CREATE TABELA MENSAGEM*/
+DROP TABLE IF EXISTS `slac`.`mensagem`;
+
+CREATE TABLE IF NOT EXISTS `slac`.`mensagem` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `texto` VARCHAR(255) NULL DEFAULT NULL,
+  `usuario_id` INT(11) NULL DEFAULT NULL,
+  `responsavel_id` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+-- -----------------------------------------------------
+-- Table `slac`.`versao`
+-- -----------------------------------------------------
+/*DROP AND CREATE TABELA VERSÃO*/
+DROP TABLE IF EXISTS `slac`.`versao`;
+
+CREATE TABLE IF NOT EXISTS `slac`.`versao` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `back_end` DOUBLE NOT NULL,
+  `front_end` DOUBLE NOT NULL,
+  `banco_de_dados` DOUBLE NOT NULL,
+  `linguagem_back` VARCHAR(255) NOT NULL,
+  `linguagem_front` VARCHAR(255) NOT NULL,
+  `linguagem_banco` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 2
+DEFAULT CHARACTER SET = utf8;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
