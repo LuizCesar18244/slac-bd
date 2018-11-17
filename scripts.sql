@@ -137,9 +137,10 @@ DROP TABLE IF EXISTS `slac`.`mensagem`;
 
 CREATE TABLE IF NOT EXISTS `slac`.`mensagem` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `texto` VARCHAR(255) NULL DEFAULT NULL,
-  `usuario_id` INT(11) NULL DEFAULT NULL,
-  `responsavel_id` INT(11) NULL DEFAULT NULL,
+  `texto` VARCHAR(255) NOT NULL,
+  `usuario_id` INT(11) NOT NULL,
+  `responsavel_id` INT(11) NOT NULL,
+  `data` DATETIME NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
